@@ -1,0 +1,250 @@
+
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo{
+  width: 18%;
+}
+.backBlue{
+  background:#1ABDFF;
+  padding: 15px;
+}
+.title-carousel{
+  text-shadow: 5px 5px 5px #000;
+}
+.text-carousel{
+  font-size: 20px;
+  text-shadow: 5px 5px 5px #000;
+}
+.text-slogan{
+color: #fff;
+}
+.text-slogan1{
+  font-size: 18px;
+  color: #fff;
+}
+/*search*/
+
+.icon-addon {
+  position: relative;
+  color: #cbcbcb;
+  display: block;
+  font-family: 'Roboto-Thin';
+}
+
+.icon-addon:after,
+.icon-addon:before {
+  display: table;
+  content: " ";
+}
+
+.icon-addon:after {
+  clear: both;
+}
+
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon,
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+  position: absolute;
+  z-index: 2;
+  left: 10px;
+  font-size: 14px;
+  width: 20px;
+  margin-left: -2.5px;
+  text-align: center;
+  padding: 10px 0;
+  top: 1px;
+}
+
+.icon-addon.addon-lg .form-control {
+  line-height: 1.33;
+  height: 40px;
+  font-size: 18px;
+  padding: 10px 16px 10px 40px;
+  border-radius: 25px !important;
+  width: 100%;
+  color: #cbcbcb !important;
+}
+
+.icon-addon.addon-lg .fa,
+.icon-addon.addon-lg .glyphicon {
+  font-size: 18px;
+  margin-left: 0;
+  left: 10px;
+  top: 4px;
+  color: #cbcbcb;
+}
+
+.navbar {
+  position: relative;
+  min-height: 80px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  line-height: 80px;
+  width:158px ;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-default {
+  background-color: #1ABDFF;
+  border-color: #1ABDFF;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #1ABDFF;
+  background-color: #fff;
+}
+div.backImagen{
+	display: inline-block;
+	width: 100%;
+    height: 320px;
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-bottom: 30px;
+	color: #fff;
+	transition:0.1s;
+}
+div.backImagen.back1{
+	background-image: url("../images/perrito1.jpeg");
+}
+div.backImagen.back2{
+	background-image: url("../images/perrito2.jpeg");
+}
+div.backImagen.back3{
+	background-image: url("../images/perrito3.jpeg");
+}div.backImagen.back4{
+	background-image: url("../images/perrito4.jpeg");
+}div.backImagen.back5{
+	background-image: url("../images/perrito5.jpeg");
+}
+div.backImagen.back6{
+	background-image: url("../images/perrito6.jpeg");
+}
+.contenedor-img {
+float: left;
+overflow: hidden;
+position: relative;
+text-align: center;
+cursor: default;
+background: #fff;
+}
+.contenedor-img .mascara,.contenedor-img .contenido {
+height: 100%;
+position: absolute;
+overflow: hidden;
+top: 0;
+left: 0;
+width: 100%;
+}
+.contenedor-img img {
+display: block;
+position: relative;
+
+}
+.contenedor-img  .textTi{
+color: #1ABDFF; 
+text-align: center;
+position: relative;
+font-size: 20px;
+padding: 10px;
+background: #ffffff;
+margin: 20px 0 0 0;
+
+}
+
+.contenedor-img a.link {
+display: inline-block;
+text-decoration: none;
+padding: 7px 14px;
+background: #222;
+color: #fff;
+box-shadow: 0 0 1px #000
+}
+.contenedor-img a.link:hover {
+box-shadow: 0 0 5px #000
+}
+/*Ejemplo 1*/
+.ejemplo-1 img {
+transition: all 0.2s linear;
+}
+.ejemplo-1 .mascara {
+opacity: 0;
+background-color:#1ABDFF; 
+transition: all 0.3s ease-in-out;
+}
+.ejemplo-1 .textTi {
+transform: translateX(-200px);/*Desplazamos a la izquierda*/
+opacity: 0;
+transition: all 0.7s ease-in-out;
+}
+.ejemplo-1 p {
+transform: translateX(200px);/*Desplazamos a la derecha*/
+opacity: 0;
+transition: all 0.4s linear;
+color: #fff;
+font-size: 16px;
+}
+.ejemplo-1 a.link{
+opacity: 0;
+transition: all 0.4s ease-in-out;
+transform: translateY(100px)/*Desplazamos para abajo*/
+}
+.ejemplo-1:hover img {
+transform: scale(1.1);/*Damos un ligero zoom a la imagen*/
+}
+.ejemplo-1:hover .mascara {
+opacity: 0.8;
+}
+.ejemplo-1:hover h2,
+.ejemplo-1:hover p,
+.ejemplo-1:hover a.link {
+opacity: 1;
+transform: translateX(0px);/*Regresamos a las posiciones originales*/
+}
+.ejemplo-1:hover p {
+transition-delay: 0.1s;
+}
+.ejemplo-1:hover a.link {
+transition-delay: 0.2s; /*Aplicamos un pequeño retardo para que se muestre al final*/
+transform: translateY(0px);
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+}
+
