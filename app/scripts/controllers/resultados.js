@@ -8,11 +8,11 @@
  * Controller of the adoptApp
  */
 angular.module('adoptApp')
-  .controller('ResultadosCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('ResultadosCtrl', function ($scope,$location,$http) {
+  
     new WOW().init();
+  
+  
+
+
   });

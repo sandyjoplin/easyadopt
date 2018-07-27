@@ -12,6 +12,19 @@ body {
   padding-right: 15px;
 }
 
+.back-Albergue{
+ background:#1ABDFF;
+ height: 200px;
+ padding: 60px;
+ color: #fff;
+}
+.text-albergue{
+  background:rgb(216, 227, 231);
+  height: 150px;
+  color: rgb(104, 103, 103);
+  padding: 10px;
+  margin-bottom: 10px
+}
 .logo{
   width: 18%;
 }

@@ -1,0 +1,167 @@
+
+   <a href="#/"> <img src="images/albergue.jpg"  class="logo-albergue animated fadeInDown" alt=""></a>
+    <section class="backBlue text-center">
+        <h2 class="text-slogan animated fadeInLeft">LLenando vidas de amor :) </h2>
+        <p class="text-slogan1 animated fadeInRight">
+            Conoce nuestro albergues afiliados
+        </p>
+    </section><br>
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" ng-repeat="item in  ListaAlbergues">
+        <div class=" wow fadeInLeft data-wow-duration="1s" data-wow-delay="0s"">
+                <div class="back-Albergue text-center">
+                        <i class="fas fa-home fa-5x"></i>
+                 </div>
+                 <div class="text-albergue text-center">
+                        <p>{{ item.nombre }}</p>
+                        <p>{{ item.ubicacion }}</p>
+                        <button type="button" class="btn btn-primary"  ng-click="modalPerros(item.perros)" >Ver caninos</button>
+                       
+                 </div>
+        </div>
+         
+        </div>
+       
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class=" wow fadeInLeft data-wow-duration="1s" data-wow-delay="2s"">
+                       
+                </div>
+
+        </div>
+        <br>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                
+                            <a class="navbar-brand" href="#/">
+                                <img src="images/easylogo.png" width="80px;" alt="">
+                            </a>
+                        </div>
+                
+                        <div class="collapse navbar-collapse" id="js-navbar-collapse">
+                
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle text-center" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Raza
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">Husky</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Salchicha</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pitbull</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle text-center" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Años
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">Cachorro</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Adulto</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Mayor</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle text-center" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tamaño
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">Pequeño</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Mediano</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Grande</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle text-center" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Genero
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">Macho</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Hembra</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                       
+                            <section class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-8 col-sm-8">
+                                            <div class="row " >
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 xol-xs-12" ng-repeat="item in  perritosql">
+                                                            <div class="contenedor-img ejemplo-1 backImagen back1 animated fadeInUp ">
+                                                                    <a class="" href="" target="_blank">
+                                                                        <div class="mascara">
+                                                                            <p class="textTi">{{ item.nombre }}</p> <br>
+                                                                            <p class="text-center">Raza: {{ item.raza }}</p>
+                                                                            <p class="text-center">Edad: {{ item.edad }}</p>
+                                                                            <p class="text-center"> </p>
+                                                                            <button class="btn btn-primary ">Ver mas</button>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <div class="">
+                                            <iframe class="" width="100%" height="500px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.8803333470432!2d-99.16443658531308!3d19.41757574619301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3980ac181f%3A0xe357573c8ab8ef4d!2sDev.f!5e0!3m2!1ses-419!2smx!4v1532710994508"
+                                                frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </div>
+                            
+                                    </div>
+                                </div>
+                            </section>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      </div>

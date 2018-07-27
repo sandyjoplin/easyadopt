@@ -10,7 +10,7 @@
 angular.module('adoptApp')
   .controller('MainCtrl', function ($scope,$location) {
     new WOW().init();
-    $scope.toResultados = function () {
-      $location.url("/resultados")
+    $scope.toAlbergues = function () {
+      $location.url("/albergues")
     }
   });

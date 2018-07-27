@@ -40,6 +40,11 @@ angular
         controller: 'ResultadosCtrl',
         controllerAs: 'resultados'
       })
+      .when('/albergues', {
+        templateUrl: 'views/albergues.html',
+        controller: 'AlberguesCtrl',
+        controllerAs: 'albergues'
+      })
       .otherwise({
         redirectTo: '/'
       });
